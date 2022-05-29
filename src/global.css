@@ -290,3 +290,28 @@ ul.circled-list li::after{
   100% { transform: rotate(360deg); }
 }
 
+.plan-container{
+  width: 320px;
+  height: 50px;
+  background: #F9F9F9;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border: 1px solid #e7e7e7;
+}
+
+.plan-container h4{
+  display: flex;
+  height: 100%;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+.plan-switch{
+  width: 50%;
+  height: 42px;
+  border-radius: 100px;
+  background-color: #049938;
+}

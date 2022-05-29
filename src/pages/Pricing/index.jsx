@@ -3,8 +3,8 @@ import Accordion from '../../components/common/Accordion'
 import PricingCard from './Card'
 
 function Pricing() {
-
-  const PricingCards = [{title: "Standard Plan",  icon: '1.png', price: '$69.99', package_time: '/Month',}, {title: "Premium Plan", icon: '2.png', price: '$89.99', package_time: '/Month'}, {title: "Enterprise Plan", icon: '3.png', price: 'Get in touch.'}]
+  const [toggle, setToggle] = useState('monthly');
+  const PricingCards = [{ title: "Standard Plan", icon: '1.png', price: '$69.99', package_time: toggle === 'monthly' ? '/Month' : '/Yearly', }, { title: "Premium Plan", icon: '2.png', price: '$89.99', package_time: toggle === 'monthly' ? '/Month' : '/Yearly' }, { title: "Enterprise Plan", icon: '3.png', price: 'Get in touch.' }]
 
   return (
     <>
@@ -14,7 +14,15 @@ function Pricing() {
           <p className="mt-4 text-18 text-gray-500">ScriptCards is a successful patient education strategy that drives patient activation. An activated patient is more likely to value your service within the community.</p>
         </section>
 
-        <div className="text-center mt-99">
+        <div className="mt-99">
+
+          <section className='w-full flex justify-center mb-62'>
+            <div className='relative plan-container text-14 px-2'>
+              <div className={`absolute plan-switch transition-all ${toggle === 'monthly' ? 'left-1' : 'right-1'}`}></div>
+              <h4 onClick={() => setToggle('monthly')} className={`font-medium cursor-pointer ${toggle === 'monthly' && 'text-white'}`}>Monthly Billing</h4>
+              <h4 onClick={() => setToggle('yearly')} className={`font-medium cursor-pointer ${toggle === 'yearly' && 'text-white'}`}>Yearly Billing </h4>
+            </div>
+          </section>
 
           <div className="flex flex-wrap -mx-1 lg:-mx-4">
             {
