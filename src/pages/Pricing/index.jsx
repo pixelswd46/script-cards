@@ -8,7 +8,7 @@ function Pricing() {
 
   return (
     <>
-      <main className="container mx-auto px-24 lg:px-99 pb-99 my-99">
+      <main className="container mx-auto px-24 lg:px-99 pb-99 my-99"> 
         <section className="w-full 2xl:w-2/3 mx-auto text-center">
           <h3 className="text-38 lg:text-56 font-semibold mb-14 text-black leading-44 lg:leading-58">Pricing Plans</h3>
           <p className="mt-4 text-18 text-gray-500">ScriptCards is a successful patient education strategy that drives patient activation. An activated patient is more likely to value your service within the community.</p>
