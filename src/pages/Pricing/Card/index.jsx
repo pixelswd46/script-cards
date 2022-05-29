@@ -1,5 +1,3 @@
-import { AiOutlineHome } from "react-icons/ai";
-
 const PricingCard = ({ item }) => {
 
     return (
@@ -8,7 +6,7 @@ const PricingCard = ({ item }) => {
             <article className="py-26 px-20 rounded-lg custom-shadow cursor-pointer">
                 <div className="flex justify-between items-center mb-4">
                     <h3 className="text-14 block lg:text-18 font-bold text-black">{item?.title}</h3>
-                    <AiOutlineHome className="text-gray-500 text-24" />
+                    <img className="w-20" src={`/assets/pricing-icons/${item?.icon}`} alt="" />
                 </div>
                 <h6 className="text-left text-sm text-gray-800"> White Labelled for you </h6>
 

@@ -4,7 +4,7 @@ import PricingCard from './Card'
 
 function Pricing() {
 
-  const PricingCards = [{title: "Standard Plan", price: '$69.99', package_time: '/Month'}, {title: "Premium Plan", price: '$89.99', package_time: '/Month'}, {title: "Enterprise Plan", price: 'Get in touch.'}]
+  const PricingCards = [{title: "Standard Plan",  icon: '1.png', price: '$69.99', package_time: '/Month',}, {title: "Premium Plan", icon: '2.png', price: '$89.99', package_time: '/Month'}, {title: "Enterprise Plan", icon: '3.png', price: 'Get in touch.'}]
 
   return (
     <>

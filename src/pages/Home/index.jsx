@@ -7,7 +7,7 @@ function Home() {
             <div className="mt-99"></div>
             <Header />
 
-            <AboutScriptCard>
+            <AboutScriptCard icon="chain">
                 <h3 className="text-38 lg:text-56 font-semibold mb-14 text-black leading-44 lg:leading-58">Help improve <span className='text-primary'> medication adherence </span> through patient knowledge.</h3>
                 <p className="mt-4 text-18 text-gray-500 pr-0 lg:pr-112">Patient education is a critical component of effective care. Pharmacists bear the responsibility for educating patients on the importance of their medication therapies and the necessity of adherence. And that's where we come in. #ScriptCards</p>
             </AboutScriptCard>
@@ -17,7 +17,7 @@ function Home() {
                 <p className="mt-4 text-18 text-gray-500 pl-0 lg:pl-112">Our explicit goal is to create good quality content that helps educate users about their treatment and allow this information to be printed efficiently without any friction.</p>
             </AboutScriptCard>
 
-            <AboutScriptCard>
+            <AboutScriptCard icon="star">
                 <h3 className="text-38 lg:text-56 font-semibold mb-14 text-black leading-44 lg:leading-58">Pharmacy managers can use this tool to ensure  <span className='text-primary'> provision </span> of quality pharmaceutical care is maintained.</h3>
                 <p className="mt-4 text-18 text-gray-500 pr-0 lg:pr-112">Monitor usage so you know how your team is providing value to your patient.</p>
             </AboutScriptCard>
