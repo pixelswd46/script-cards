@@ -1,4 +1,5 @@
 import React from 'react';
+import ScrollToTop from './components/common/ScrollToTop'
 import ReactDOM from 'react-dom/client';
 import './global.css';
 import Root from './Root';
@@ -9,6 +10,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
+    <ScrollToTop />
     <Root />
     </BrowserRouter>
   </React.StrictMode>
