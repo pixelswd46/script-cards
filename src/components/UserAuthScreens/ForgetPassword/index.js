@@ -6,7 +6,7 @@ const ForgetPassword = ({ isOpen, setIsOpen }) => {
     const ismd = useMediaQuery({ query: '(min-width: 768px)' })
 
     const customStyles = {
-        content: { position: 'relative', inset: '0', backgroundColor: '#FFFFFF', border: 'none', boxShadow: '0 0 20px rgb(0 0 0 / 5%)', borderRadius: '8px', width: ismd ? '36rem' : '96%', margin: '0 auto', padding: '0', overflow: 'hidden' }
+        content: { position: 'relative', inset: '0', backgroundColor: '#FFFFFF', border: 'none', boxShadow: '0 0 20px rgb(0 0 0 / 5%)', borderRadius: '8px', width: ismd ? '32rem' : '96%', margin: '0 auto', padding: '0', overflow: 'hidden' }
     }
 
     return (

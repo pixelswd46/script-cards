@@ -1,9 +1,17 @@
 import { Link } from 'react-router-dom';
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom'
 import { AiFillFacebook, AiFillTwitterSquare, AiFillInstagram } from "react-icons/ai";
 import { BsDiscord, BsSignal } from "react-icons/bs";
 
 const Sidebar = ({ toggleSidebar, setToggleSidebar }) => {
+    const location = useLocation();
     const Navigation = [{ placeholder: 'Home', path: '/' }, { placeholder: 'Our Story', path: '/our-story' }, { placeholder: 'Pricing', path: '/pricing' }, { placeholder: 'Account', path: '/account' }, { placeholder: 'App', path: '/app' }]
+
+    useEffect(() => {
+        const body = document?.querySelector('body');
+        toggleSidebar ? body?.classList?.add('overflow-hidden') : body?.classList?.remove('overflow-hidden')
+    }, [toggleSidebar])
 
     return (
         <>
@@ -14,7 +22,7 @@ const Sidebar = ({ toggleSidebar, setToggleSidebar }) => {
                             Navigation?.map(item => (
                                 <li key={Math.random()} className='mb-12' onClick={() => setToggleSidebar(false)}>
                                     <Link to={item?.path}>
-                                        <span className='text-lg font-light cursor-pointer transition-all text-gray-700 hover:text-primary'>
+                                        <span className={`text-lg cursor-pointer transition-all hover:text-primary ${item?.path === location?.pathname ? 'text-primary' : 'text-gray-900'}`}>
                                             {item?.placeholder}
                                         </span>
                                     </Link>
@@ -24,7 +32,7 @@ const Sidebar = ({ toggleSidebar, setToggleSidebar }) => {
                     </ul>
 
                     <section className='gGngoX'>
-                        <Link to="/user-authentication"> <button className="bg-primary text-white w-full px-32 py-10 mb-24 rounded-full transition-all hover:bg-green-600 relative top-0 hover:top-px" >Get Started</button> </Link>
+                        <Link to="/user-authentication"> <button onClick={() => setToggleSidebar(false)} className="bg-primary text-white w-full px-32 py-10 mb-24 rounded-full transition-all hover:bg-green-600 relative top-0 hover:top-px" >Get Started</button> </Link>
 
                         <div className='gGngoXline py-18'>
                             <div className='flex justify-center items-center gap-3 text-26 text-gray-500'>

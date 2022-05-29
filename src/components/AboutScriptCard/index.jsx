@@ -3,8 +3,8 @@ const AboutScriptCard = ({ children, icon }) => {
 
     return (
         <main className="container mx-auto px-24 lg:px-99 my-99">
-            <section className={`flex items-center gap-6 ${icon == 'speaker' && 'flex-row-reverse'}`}>
-                <div className={`w-full mb-32 xl:mb-10} ${icon == 'speaker' && 'text-right'}`}>
+            <section className={`flex items-center gap-6 ${icon === 'speaker' && 'flex-row-reverse'}`}>
+                <div className={`w-full mb-32 xl:mb-10} ${icon === 'speaker' && 'text-right'}`}>
                     {children}
                 </div>
                 <div className="hidden w-full xl:w-2/3 xl:flex justify-center items-center">

@@ -9,15 +9,13 @@ import Sidebar from '../Sidebar';
 const Navbar = () => {
     const location = useLocation();
 
-    console.log(location.pathname);
-
     const [toggleSidebar, setToggleSidebar] = useState(false);
     const Navigation = [{ placeholder: 'Home', path: '/' }, { placeholder: 'Our Story', path: '/our-story' }, { placeholder: 'Pricing', path: '/pricing' }, { placeholder: 'Account', path: '/account' }, { placeholder: 'App', path: '/app' }]
 
     return (
         <>
 
-            <nav className="bg-white sticky top-0 z-50 h-71">
+            <nav className="h-71">
                 <main className="flex h-71 justify-between items-center mx-auto px-24 lg:px-99">
                     <Link to="/">
                         <img className="w-183" src="/assets/script-cards.svg" alt="" />
@@ -33,7 +31,7 @@ const Navbar = () => {
                                 Navigation?.map(item => (
                                     <li key={Math.random()}>
                                         <Link to={item?.path}>
-                                            <span className={`text-lg font-light cursor-pointer transition-all hover:text-primary ${item?.path == location?.pathname ? 'text-primary' : 'text-gray-700'}`}>
+                                            <span className={`text-lg cursor-pointer transition-all hover:text-primary ${item?.path === location?.pathname ? 'text-primary' : 'text-gray-900'}`}>
                                                 {item?.placeholder}
                                             </span>
                                         </Link>

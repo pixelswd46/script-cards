@@ -1,6 +1,8 @@
+import { useState } from 'react';
 import PricingCard from './Card'
 
 function OurStory() {
+
   const PricingCards = ["Standard Plan", "Premium Plan", "Enterprise Plan"]
 
   return (

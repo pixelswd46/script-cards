@@ -7,7 +7,7 @@ const Footer = () => {
 
     return (
         <>
-            <footer className="bg-white">
+            <footer>
                 <section className="container mx-auto px-24 lg:px-99 py-32 md:flex md:items-center text-center md:justify-between">
                     <Link to="/">
                         <img className="w-183" src="/assets/script-cards.svg" alt="" />
@@ -18,9 +18,9 @@ const Footer = () => {
                     </div>
                 </section>
 
-                <section className="bg-primary">
+                <section className="bg-footer">
                     <section className="container mx-auto px-24 lg:px-99 py-24 md:flex md:items-center text-center md:justify-between">
-                        <span className="cursor-pointer text-gray-400 text-14 hover:underline transition-all">Contact Us</span>
+                        <Link to="/contact-us"><span className="cursor-pointer text-gray-400 text-14 hover:underline transition-all">Contact Us</span></Link>
                         <span className="text-gray-400 text-14"> Copyright © 2022 ScriptCards Pty Ltd.</span>
                         <span className="text-gray-400 text-14"> <Link to="/terms&conditions"><span className='cursor-pointer hover:underline transition-all'> Terms and Conditions </span> </Link> & <Link to="/privacy-policy"><span className='cursor-pointer hover:underline transition-all'> Privacy Policy </span> </Link> </span>
                     </section>

@@ -1,4 +1,3 @@
-import { HiSpeakerphone } from "react-icons/hi";
 
 const Header = ({ children, icon }) => {
 
@@ -9,11 +8,13 @@ const Header = ({ children, icon }) => {
                 <p className="mt-4 text-18 text-gray-500">It is a Drug Information Management and Printing System (DIMPS) that takes a drug barcode as single input on a web app and prints evidence-based patient-facing information locally.</p>
                 <p className="mt-4 font-medium text-18 text-gray-700">It is BLAZING fast and is powered by Proprietary Technology developed in Australia.</p>
 
-                <section className="flex items-start justify-center flex-col lg:flex-row gap-6 mt-99">
-                    <div className="w-full flex justify-center mb-42">
-                        <img src="/assets/brochure-1.png" alt="" /></div>                    
-                    <div className="w-full flex justify-center mb-42">                 
-                        <img src="/assets/brochure-2.png" alt="" /></div>                    
+                <section className="flex items-start justify-center flex-col lg:flex-row gap-8 mt-99">
+                    <div className="w-full flex justify-center lg:justify-end mb-42">
+                        <img className="border-16 border-gray-100" src="/assets/brochure-1.png" alt="" />
+                    </div>                    
+                    <div className="w-full flex justify-center lg:justify-start mb-42">                 
+                        <img className="border-16 border-gray-100" src="/assets/brochure-2.png" alt="" />
+                    </div>                    
                 </section>
                 <hr className="w-240 mx-auto mt-99" />
             </section>

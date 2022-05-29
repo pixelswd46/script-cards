@@ -7,6 +7,9 @@ import UserAuth from "./pages/UserAuth";
 import OurStory from "./pages/OurStory";
 import Pricing from "./pages/Pricing";
 import Terms from "./pages/Terms";
+import Account from "./pages/Account";
+import App from "./pages/App";
+import ContactUs from "./pages/ContactUs";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 
 function Root() {
@@ -19,7 +22,10 @@ function Root() {
           <Route path="/user-authentication" element={<UserAuth />} />
           <Route path="/our-story" element={<OurStory />} />
           <Route path="/pricing" element={<Pricing />} />
+          <Route path="/contact-us" element={<ContactUs />} />
           <Route path="/terms&conditions" element={<Terms />} />
+          <Route path="/account" element={<Account />} />
+          <Route path="/app" element={<App />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         </Route>
       </Routes>
