@@ -14,7 +14,7 @@ const Footer = () => {
                     </Link>
                     <div className="flex mt-22 space-x-6 flex-col md:flex-row items-end md:mt-0">
                         <span className="group flex items-center gap-2 cursor-pointer text-gray-600 text-14 hover:underline transition-all"><MdLocationPin className='text-22 group-hover:text-primary transition-all' /> 447 High Street Penrith 2750</span>
-                        <span className="group flex items-center gap-3 cursor-pointer text-gray-600 text-14 hover:underline transition-all"> <MdMail className='text-20 group-hover:text-primary transition-all' /> 447 High Street Penrith 2750</span>
+                        <a href="mailto:support@focaltasker.com"> <span className="group flex items-center gap-3 cursor-pointer text-gray-600 text-14 hover:underline transition-all"> <MdMail className='text-20 group-hover:text-primary transition-all' /> support@focaltasker.com</span> </a>
                     </div>
                 </section>
 
