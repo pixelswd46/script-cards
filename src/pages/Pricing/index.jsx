@@ -4,7 +4,7 @@ import PricingCard from './Card'
 
 function Pricing() {
   const [toggle, setToggle] = useState('monthly');
-  const PricingCards = [{ title: "Standard Plan", icon: '1.png', price: toggle === 'monthly' ? '$69.99' : '$49.99', package_time: toggle === 'monthly' ? '/Month' : '/Yearly', lists: ['Unlimited printing', 'Pharmacy branding', 'GST included'] }, { title: "Premium Plan", icon: '2.png', price: toggle === 'monthly' ? '$89.99' : '$69.99', package_time: toggle === 'monthly' ? '/Month' : '/Yearly', lists: ['Everything in standard plan', 'Remove ScriptCards Branding',]  }, { title: "Enterprise Plan", icon: '3.png', price: 'Get in touch.', lists: ['Customisation', 'Private ScriptCards', 'Postcode lock for new signups', 'Banner advertisements on back']  }]
+  const PricingCards = [{ title: "Standard Plan", icon: '1.png', price: toggle === 'monthly' ? '$69.99' : '$49.99', package_time: toggle === 'monthly' ? '/Month' : '/Month', lists: ['Unlimited printing', 'Pharmacy branding', 'GST included'] }, { title: "Premium Plan", icon: '2.png', price: toggle === 'monthly' ? '$89.99' : '$69.99', package_time: toggle === 'monthly' ? '/Month' : '/Month', lists: ['Everything in standard plan', 'Remove ScriptCards Branding',]  }, { title: "Enterprise Plan", icon: '3.png', price: 'Get in touch.', lists: ['Customisation', 'Private ScriptCards', 'Postcode lock for new signups', 'Banner advertisements on back']  }]
 
   return (
     <>
@@ -20,7 +20,7 @@ function Pricing() {
             <div className='relative plan-container text-14 px-2'>
               <div className={`absolute plan-switch transition-all ${toggle === 'monthly' ? 'left-1' : 'right-1'}`}></div>
               <h4 onClick={() => setToggle('monthly')} className={`font-medium cursor-pointer ${toggle === 'monthly' && 'text-white'}`}>Monthly Billing</h4>
-              <h4 onClick={() => setToggle('yearly')} className={`font-medium cursor-pointer ${toggle === 'monthly' && 'text-white'}`}>Yearly Billing </h4>
+              <h4 onClick={() => setToggle('yearly')} className={`font-medium cursor-pointer ${toggle === 'yearly' && 'text-white'}`}>Yearly Billing </h4>
             </div>
           </section>
 
