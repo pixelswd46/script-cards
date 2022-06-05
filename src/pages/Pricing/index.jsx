@@ -20,7 +20,7 @@ function Pricing() {
             <div className='relative plan-container text-14 px-2'>
               <div className={`absolute plan-switch transition-all ${toggle === 'monthly' ? 'left-1' : 'right-1'}`}></div>
               <h4 onClick={() => setToggle('monthly')} className={`font-medium cursor-pointer ${toggle === 'monthly' && 'text-white'}`}>Monthly Billing</h4>
-              <h4 onClick={() => setToggle('yearly')} className={`font-medium cursor-pointer ${toggle === 'yearly' && 'text-white'}`}>Yearly Billing </h4>
+              <h4 onClick={() => setToggle('yearly')} className={`font-medium cursor-pointer ${toggle === 'monthly' && 'text-white'}`}>Yearly Billing </h4>
             </div>
           </section>
 
