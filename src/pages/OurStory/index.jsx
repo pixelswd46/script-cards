@@ -6,7 +6,7 @@ function OurStory() {
   return (
     <>
       <main className="container mx-auto px-24 lg:px-99 pb-99 my-99">
-        <section className="w-full 2xl:w-2/3 mx-auto text-center">
+        <section className="w-full  mx-auto text-center">
           <h3 className="text-38 lg:text-56 font-semibold mb-14 text-black leading-44 lg:leading-58"><span className="text-primary"> <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC539473/" target="_blank" rel="noreferrer"> Studies </a>  </span> have shown that patients forget up to 80% of what their doctors tell them during appointments. The same will apply to drug information!</h3>
           <hr className="w-240 mx-auto mt-99" />
         </section>

@@ -7,16 +7,9 @@ const AboutScriptCard = ({ children, icon }) => {
                 <div className={`w-full mb-32 xl:mb-10} ${icon === 'speaker' && 'text-right'}`}>
                     {children}
                 </div>
-                <div className="hidden w-full xl:w-2/3 xl:flex justify-center items-center">
-                    {/* <div className='h-240 w-240 rounded-50 icon-shadow'>
-                        <div className="text-gray-400 relative -top-10 -right-16 w-5/6 -rotate-45">
-                            <img src="/assets/star.svg" alt="" />
-                        </div>
-                    </div> */}
-                    <img src={`/assets/about-scriptcards-icon/${icon}.png`} alt="" />
-                </div>
+              
             </section>
-            <hr className="w-240 mx-auto mt-28" />
+            <hr className="w-240 mx-auto mt-100" />
         </main>
     )
 }
